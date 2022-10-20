@@ -17,6 +17,11 @@ discount_factor = 0.99
 learning_rate = 0.001
 discounted_rewards -= np.mean(discounted_rewards)
 discounted_rewards /= np.std(discounted_rewards)
+
+# A2C
+discount_factor = 0.99
+actor_lr = 0.001
+critic_lr = 0.005
 ```
 
 # 原来的 README

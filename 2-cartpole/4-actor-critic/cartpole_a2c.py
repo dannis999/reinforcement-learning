@@ -8,7 +8,6 @@ from keras.optimizers import Adam
 
 EPISODES = 1000
 
-
 # A2C(Advantage Actor-Critic) agent for the Cartpole
 class A2CAgent:
     def __init__(self, state_size, action_size):
