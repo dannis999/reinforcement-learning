@@ -1,7 +1,6 @@
 import numpy
 
-
-class SumTree:
+class SumTree: # 好像没有被引用
     write = 0
 
     def __init__(self, capacity):

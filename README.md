@@ -1,8 +1,26 @@
+# 代码阅读笔记
+
+DQN note
+
+```python
+discount_factor = 0.99
+learning_rate = 0.001
+epsilon = 1.0
+epsilon_decay = 0.999
+epsilon_min = 0.01
+batch_size = 64
+train_start = 1000
+memory = deque(maxlen=2000)
+```
+
+
+# 原来的 README
+
 <p align="center"><img width="90%" src="images/Reinforcement-Learning.png"></p>
 
 --------------------------------------------------------------------------------
 
-> Minimal and clean examples of reinforcement learning algorithms presented by [RLCode](https://rlcode.github.io) team. [[한국어]](https://github.com/rlcode/reinforcement-learning-kr)
+> Minimal and clean examples of reinforcement learning algorithms presented by [RLCode](https://rlcode.github.io) team.
 >
 > Maintainers - [Woongwon](https://github.com/dnddnjs), [Youngmoo](https://github.com/zzing0907), [Hyeokreal](https://github.com/Hyeokreal), [Uiryeong](https://github.com/wooridle), [Keon](https://github.com/keon)
 
