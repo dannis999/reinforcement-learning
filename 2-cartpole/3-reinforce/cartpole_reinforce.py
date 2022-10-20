@@ -8,7 +8,6 @@ from keras.optimizers import Adam
 
 EPISODES = 1000
 
-
 # This is Policy Gradient agent for the Cartpole
 # In this example, we use REINFORCE algorithm which uses monte-carlo update rule
 class REINFORCEAgent:
@@ -77,7 +76,7 @@ class REINFORCEAgent:
         episode_length = len(self.states)
 
         discounted_rewards = self.discount_rewards(self.rewards)
-        discounted_rewards -= np.mean(discounted_rewards)
+        discounted_rewards -= np.mean(discounted_rewards) # 奖励归一化
         discounted_rewards /= np.std(discounted_rewards)
 
         update_inputs = np.zeros((episode_length, self.state_size))

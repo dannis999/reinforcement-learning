@@ -1,8 +1,7 @@
 # 代码阅读笔记
 
-DQN note
-
 ```python
+# DQN
 discount_factor = 0.99
 learning_rate = 0.001
 epsilon = 1.0
@@ -12,8 +11,13 @@ batch_size = 64
 train_start = 1000
 memory = deque(maxlen=2000)
 mini_batch = random.sample(self.memory, batch_size)
-```
 
+# PG
+discount_factor = 0.99
+learning_rate = 0.001
+discounted_rewards -= np.mean(discounted_rewards)
+discounted_rewards /= np.std(discounted_rewards)
+```
 
 # 原来的 README
 
