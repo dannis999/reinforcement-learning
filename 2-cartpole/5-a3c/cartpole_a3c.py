@@ -9,7 +9,6 @@ from keras.models import Model
 from keras.optimizers import Adam
 from keras import backend as K
 
-
 # global variables for threading
 episode = 0
 scores = []

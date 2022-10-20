@@ -22,6 +22,13 @@ discounted_rewards /= np.std(discounted_rewards)
 discount_factor = 0.99
 actor_lr = 0.001
 critic_lr = 0.005
+
+# A3C
+actor_lr = 0.001
+critic_lr = 0.001
+discount_factor = .99
+hidden1, self.hidden2 = 24, 24
+threads = 8
 ```
 
 # 原来的 README
