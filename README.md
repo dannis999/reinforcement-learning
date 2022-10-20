@@ -11,6 +11,7 @@ epsilon_min = 0.01
 batch_size = 64
 train_start = 1000
 memory = deque(maxlen=2000)
+mini_batch = random.sample(self.memory, batch_size)
 ```
 
 
