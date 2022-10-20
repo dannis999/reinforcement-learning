@@ -10,7 +10,6 @@ from keras.models import Sequential
 
 EPISODES = 300
 
-
 # Double DQN Agent for the Cartpole
 # it uses Neural Network to approximate q function
 # and replay memory & target q network
@@ -94,7 +93,7 @@ class DoubleDQNAgent:
             update_target[i] = mini_batch[i][3]
             done.append(mini_batch[i][4])
 
-        target = self.model.predict(update_input)
+        target = self.model.predict(update_input) # 好像只有这里开始和 DQN 不同
         target_next = self.model.predict(update_target)
         target_val = self.target_model.predict(update_target)
 
